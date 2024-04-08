@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Simulador de Remuneração - 2024</title>
+    </head>
+    <body>
+        <h1>Simulador de Remuneração - Vigência Janeiro - 2024</h1>
+
+        <div class="campoParaEnvioDoSalario">
+            <input type="number" placeholder="Digite o salário bruto" id="salarioBruto" required>
+            <button id="envioDoSalario">Enviar</button>
+        </div>
+
+        <div class="tabela">
+            <table>
+                <tr>
+                    <th>Dependentes</th>
+                    <th>Remuneração Total</th>
+                    <th>Pró-Labore</th>
+                    <th>Antecipação de sobras</th>
+                    <th>INSS20%</th>
+                    <th>IRRT</th>
+                    <th>Taxa Adm</th>
+                    <th>5 Parcelas de Quotas</th>
+                    <th>Total Desconto</th>
+                    <th>Total Liquido</th>
+                    <th>Tx Adm</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>10000</td>
+                    <td>1412.00</td>
+                    <td>8588.00</td>
+                    <td class="red">282.40</td>
+                    <td class="red">0.00</td>
+                    <td class="red">250.00</td>
+                    <td class="red">10.00</td>
+                    <td class="red">541.40</td>
+                    <td>9457.60</td>
+                    <td>2.50</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="formParaAlterarDescontos hide">
+            <form>
+                <h2>Alterar os Descontos</h2>
+                <label for="">salário bruto</label>
+                <input type="number" placeholder="Digite o valor" id="salario_bruto_alterado" required/>
+                <label for="">Pro-labore</label>
+                <input type="text" placeholder="Digite o valor" id="pro_labore_alterado" required/>
+                <label for="">INSS</label>
+                <input type="text" placeholder="Digite o valor" id="inss_alterado" required/>
+                <label for="">Taxa Adm</label>
+                <input type="text" placeholder="Digite o valor" id="taxa_adm_alterada" required/>
+                <label for="">5 Parcelas de Quotas</label>
+                <input type="text" placeholder="Digite o valor" id="quotas_alterada" required/>
+                <button id="enviarDadosAlterados">Calcular</button>
+                <button type="button" id="cancelarAlteracaoDesconto">Cancelar</button>
+            </form>
+        </div>
+
+        <div class="btnDesconto">
+            <button id="alterarDescontos">Alterar Descontos</button>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

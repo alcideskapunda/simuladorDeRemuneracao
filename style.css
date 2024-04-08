@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    /* min-width: 100vh; */
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.campoParaEnvioDoSalario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.campoParaEnvioDoSalario input {
+    width: 350px;
+    padding: 18px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.campoParaEnvioDoSalario button {
+    background-color: #040f4bb0;
+    color: white;
+    font-weight: bold;
+    padding: 18px;
+    font-size: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.campoParaEnvioDoSalario button:hover {
+    background-color: #030370;
+}
+
+table {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+table, th, td {
+  border: 2px solid #ccc;
+  border-collapse: collapse;
+  padding: 9px;
+  font-weight: bold;
+}
+
+th {
+  background-color: #030370;
+  color: #f9f9f9;
+}
+
+.red {
+  color: red;
+}
+
+.formParaAlterarDescontos h2 {
+    /* font-size: 22px; */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formParaAlterarDescontos form {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.formParaAlterarDescontos form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.formParaAlterarDescontos form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.formParaAlterarDescontos form button[type="button"] {
+    background-color: #040f4bb0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0px 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formParaAlterarDescontos form button[type="button"]:hover {
+    background-color: #030370;
+}
+
+.formParaAlterarDescontos form button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formParaAlterarDescontos form button:hover {
+    background-color: rgba(136, 1, 1, 0.452);
+}
+
+.btnDesconto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btnDesconto button {
+    background-color: #040f4bb0;
+    width: 220px;
+    font-weight: bold;
+    color: #f5f5f5;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.btnDesconto button:hover {
+    background-color: #030370;
+}
+
+.hide {
+    display: none;
+}
